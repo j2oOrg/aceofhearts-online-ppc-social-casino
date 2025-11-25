@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       status.textContent = "";
-      status.className = "form-status";
+      status.className = "form-status-w3v7";
 
       const name = document.getElementById("hubName").value.trim();
       const email = document.getElementById("hubEmail").value.trim();
@@ -16,22 +16,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!name || !email || !message) {
         status.textContent = "Please fill in all fields before submitting.";
-        status.classList.add("error");
+        status.classList.add("is-error-h5p9");
         return;
       }
       if (!emailPattern.test(email)) {
         status.textContent = "Please enter a valid email address.";
-        status.classList.add("error");
+        status.classList.add("is-error-h5p9");
         return;
       }
 
       form.reset();
       status.textContent = "Message sent successfully! We’ll reply within 48 hours.";
-      status.classList.add("success");
+      status.classList.add("is-success-f5k1");
 
       setTimeout(() => {
         status.textContent = "";
-        status.className = "form-status";
+        status.className = "form-status-w3v7";
       }, 4000);
     });
   }
