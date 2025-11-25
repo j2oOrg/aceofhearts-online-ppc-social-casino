@@ -333,6 +333,35 @@ img{max-width:100%; display:block}
 }
 .contact-info-r2n1 p{margin:0.1rem 0; color:var(--muted)}
 .contact-info-r2n1 strong{color:var(--text)}
+.contact-meta-u3p1{
+  list-style:none;
+  padding:0;
+  margin:0.8rem 0 0;
+  display:grid;
+  gap:0.4rem;
+}
+.contact-meta-u3p1 li{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  background:rgba(255,255,255,0.03);
+  border:1px solid var(--border);
+  padding:0.55rem 0.75rem;
+  border-radius:10px;
+  color:var(--muted);
+  font-weight:700;
+}
+.contact-meta-icon-r9t3{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:rgba(255,138,61,0.18);
+  color:var(--accent);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0.9rem;
+}
 .contact-form-u9m1{
   background:var(--panel);
   border:1px solid var(--border);
@@ -652,16 +681,19 @@ img{max-width:100%; display:block}
 <section id="contact" class="contact-section-e2a3">
   <div class="wrap-max-g0s1">
     <h2 class="title-main-b5k3" style="text-align:center; margin-bottom:0.35rem;">Contact</h2>
-    <p class="lead-sub-l1u8" style="text-align:center;">Share feedback, request campaign slots, or ask for a custom embed.</p>
+    <p class="lead-sub-l1u8" style="text-align:center;">Pick a lane: partnerships, campaign slots, support, or a bespoke embed for your flow.</p>
 
     <div class="contact-grid-c5r8">
       <div class="contact-info-r2n1">
         <h4>Get in touch</h4>
         <p><strong>Email:</strong> <a href="mailto:hello@aceofhearts.online" class="link-accent-x6p4">hello@aceofhearts.online</a></p>
-        <p><strong>Business:</strong> aceofhearts Studio</p>
-        <p><strong>Location:</strong> Remote-first studio</p>
-        <p><strong>Hours:</strong> Monday–Friday, 9:00 AM – 5:00 PM (PST)</p>
-        <p><strong>Support:</strong> Replies within 24–48 hours.</p>
+        <p><strong>Studio:</strong> aceofhearts (remote-first)</p>
+        <p><strong>Hours:</strong> Mon–Fri, 9:00–17:00 (PST)</p>
+        <ul class="contact-meta-u3p1">
+          <li><span class="contact-meta-icon-r9t3"><i class="fa-solid fa-handshake"></i></span>Partnership / ad slot inquiry</li>
+          <li><span class="contact-meta-icon-r9t3"><i class="fa-solid fa-code"></i></span>Custom embed or white-label ask</li>
+          <li><span class="contact-meta-icon-r9t3"><i class="fa-solid fa-life-ring"></i></span>Support: replies in 24–48h</li>
+        </ul>
       </div>
 
       <form id="hubForm" class="contact-form-u9m1" novalidate>
